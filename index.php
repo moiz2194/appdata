@@ -7,7 +7,7 @@ $url = "https://proxycheck.io/v2/{$ip}?key={$apiKey}&vpn=1";
 $response = @file_get_contents($url);
 $data = @json_decode($response, true);
 
-$status = $data[$ip]['proxy'] ?? 'unknown';
+$status = $data[$ip]['proxy'];
 file_put_contents($logFile, "[" . date('Y-m-d H:i:s') . "] IP: $ip | Proxy: $status\n", FILE_APPEND);
 
 if ($status === 'yes') {
