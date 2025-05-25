@@ -1,35 +1,12 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-$apiKey = '1lUc86kZM8MHpI6ID4nvV2NrkT7xO4iT';
+$apiKey = '20620h-102v9m-b8w13s-7k8n87';
+$url = "https://proxycheck.io/v2/{$ip}?key={$apiKey}&vpn=1&asn=1&risk=1";
 
-$ctx = stream_context_create(['http' => ['timeout' => 3]]);
-$response = @file_get_contents("https://ipqualityscore.com/api/json/ip/{$apiKey}/{$ip}", false, $ctx);
-$logFile = __DIR__ . '/ipqs_block_log.txt';
-
-if ($response === false) {
-    file_put_contents($logFile, "[" . date('Y-m-d H:i:s') . "] IP: $ip | ERROR: API request failed\n", FILE_APPEND);
-    return;
-}
-
+$response = @file_get_contents($url);
 $data = @json_decode($response, true);
 
-if (!is_array($data) || !isset($data['fraud_score'])) {
-    file_put_contents($logFile, "[" . date('Y-m-d H:i:s') . "] IP: $ip | ERROR: Invalid API response | Raw: $response\n", FILE_APPEND);
-    return;
-}
-
-$logEntry = "[" . date('Y-m-d H:i:s') . "] IP: $ip | Score: {$data['fraud_score']} | Bot: {$data['is_bot']} | VPN: {$data['is_vpn']} | Proxy: {$data['is_proxy']} | Datacenter: {$data['is_datacenter']}\n";
-file_put_contents($logFile, $logEntry, FILE_APPEND);
-
-// Now block if dangerous
-if (
-    $data['fraud_score'] > 85 ||
-    $data['is_bot'] === true ||
-    $data['is_proxy'] === true ||
-    $data['is_vpn'] === true ||
-    $data['is_tor'] === true ||
-    $data['is_datacenter'] === true
-) {
+if (!empty($data[$ip]) && $data[$ip]['proxy'] === 'yes') {
     http_response_code(403);
     exit;
 }
