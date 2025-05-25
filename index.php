@@ -1,9 +1,21 @@
 <?php
-// Block hosting/cloud IPs via IPInfo
 $ip = $_SERVER['REMOTE_ADDR'];
-$ipinfo = @json_decode(file_get_contents("https://ipinfo.io/{$ip}/json"));
+$apiKey = '1lUc86kZM8MHpI6ID4nvV2NrkT7xO4iT';
 
-if (isset($ipinfo->org) && preg_match('/(Google|Amazon|OVH|Hetzner|Microsoft|DigitalOcean|Alibaba|Contabo|Linode)/i', $ipinfo->org)) {
+$ctx = stream_context_create(['http' => ['timeout' => 3]]);
+$response = @file_get_contents("https://ipqualityscore.com/api/json/ip/{$apiKey}/{$ip}", false, $ctx);
+$data = @json_decode($response, true);
+
+if (
+    !empty($data) && (
+        $data['fraud_score'] > 85 ||
+        $data['is_bot'] === true ||
+        $data['is_proxy'] === true ||
+        $data['is_vpn'] === true ||
+        $data['is_tor'] === true ||
+        $data['is_datacenter'] === true
+    )
+) {
     http_response_code(403);
     exit;
 }
