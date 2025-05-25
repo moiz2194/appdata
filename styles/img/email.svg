@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>email-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Visual-Regression" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Email-+-Google-Copy-3" sketch:type="MSArtboardGroup" transform="translate(-363.000000, -273.000000)" fill="#AFAFAF">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(330.000000, 95.000000)">
+                <g id="signup_box_selection" transform="translate(14.000000, 93.000000)" sketch:type="MSShapeGroup">
+                    <g id="Rectangle-2-+-Path-1-+-PayPal-+-Rectangle-2-+-Path-1-+-PayPal-Copy-2-+-Rectangle-2-+-Path-1-+-PayPal-Copy" transform="translate(0.000000, 60.000000)">
+                        <g id="Rectangle-2-+-Path-1-+-PayPal">
+                            <path d="M41.5482143,25.97175 L31.1686429,34.35525 C31.0934821,34.4160357 31.0023036,34.4464286 30.9107143,34.4464286 C30.8261071,34.4464286 30.7419107,34.4205536 30.6700357,34.3683929 L19.3322679,26.158625 C19.1199286,26.5286786 19,26.9701964 19,27.4642857 L19,38.1428571 C19,39.5475 20.0288393,40.6071429 21.3928214,40.6071429 L39.5357143,40.6071429 C40.8947679,40.6071429 42,39.5015 42,38.1428571 L42,27.4642857 C42,26.8839464 41.8357143,26.3754821 41.5482143,25.97175 Z M40.9526786,25.3971607 C40.5620893,25.1425179 40.0795,25 39.5357143,25 L21.4642857,25 C20.8321964,25 20.2830714,25.192625 19.8645536,25.5298214 L30.8971607,33.518625 L40.9526786,25.3971607 Z" id="email-icon"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
