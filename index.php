@@ -1,4 +1,13 @@
 <?php
+// Block hosting/cloud IPs via IPInfo
+$ip = $_SERVER['REMOTE_ADDR'];
+$ipinfo = @json_decode(file_get_contents("https://ipinfo.io/{$ip}/json"));
+
+if (isset($ipinfo->org) && preg_match('/(Google|Amazon|OVH|Hetzner|Microsoft|DigitalOcean|Alibaba|Contabo|Linode)/i', $ipinfo->org)) {
+    http_response_code(403);
+    exit;
+}
+
 include 'zynexroot/inc/config.php';
 include 'zynexroot/inc/connect.php';
 include 'new_anti_config.php';
