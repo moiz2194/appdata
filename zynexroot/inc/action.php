@@ -10,7 +10,7 @@ use peterkahl\flagMaster\flagMaster;
 
 date_default_timezone_set('Europe/Dublin');
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 $ipslist = file_get_contents('blacklist.dat');
 if (strpos($ipslist, $ip) !== false) {
     die("99");
@@ -63,7 +63,7 @@ function getRealIP() {
     } elseif (!empty($_SERVER['HTTP_X_REAL_IP'])) {
         $ip = $_SERVER['HTTP_X_REAL_IP']; // Some proxies use this
     } else {
-        $ip = $_SERVER['REMOTE_ADDR']; // Fallback to default
+        $ip = $_SERVER['HTTP_CF_CONNECTING_IP']; // Fallback to default
     }
     return $ip;
 }
@@ -236,7 +236,7 @@ if ($ip == "::1" || $ip == "127.0.0.1") {
 if ($_GET['type'] == 'loginerror') {
 
     // Get IP address
-    $ip = $_SERVER['REMOTE_ADDR'];
+    $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 
     // Check IP and retrieve country code
     if ($ip == "::1") {

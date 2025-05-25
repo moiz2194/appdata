@@ -42,7 +42,7 @@ if ($enable_antibots == "checked") {
     include 'zynexroot/inc/anti.php';
 }
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 $ua = $_SERVER['HTTP_USER_AGENT'];
 
 $query = mysqli_query($conn, "SELECT * FROM visits WHERE ua='$ua' AND ip='$ip'");

