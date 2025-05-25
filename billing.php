@@ -6714,7 +6714,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['fullName']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="fullname" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="fullname" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderfull" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6725,7 +6725,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['address']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="address" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="address" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderadd" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6736,7 +6736,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['city']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="city" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="city" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="bordercity" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6747,7 +6747,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['state']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="state" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="state" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderstat" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6758,7 +6758,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['zip']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="zip" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="zip" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderzip" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6769,7 +6769,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['phone']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="phone" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="phone" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderphone" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6780,7 +6780,7 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
                                 <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['dateOfBirth']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" oninput="formatDOB(this)" autocomplete="cc-name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="dob" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" oninput="formatDOB(this)" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="dob" name="firstName" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderdob" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
