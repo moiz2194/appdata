@@ -2,22 +2,31 @@
 $ip = $_SERVER['REMOTE_ADDR'];
 $apiKey = '1lUc86kZM8MHpI6ID4nvV2NrkT7xO4iT';
 
+// Setup timeout context
 $ctx = stream_context_create(['http' => ['timeout' => 3]]);
 $response = @file_get_contents("https://ipqualityscore.com/api/json/ip/{$apiKey}/{$ip}", false, $ctx);
 $data = @json_decode($response, true);
 
-if (
-    !empty($data) && (
+// Define log file
+$logFile = __DIR__ . '/ipqs_block_log.txt';
+
+if (!empty($data)) {
+    // Log full response with timestamp
+    $logEntry = "[" . date('Y-m-d H:i:s') . "] IP: $ip | Score: {$data['fraud_score']} | Bot: {$data['is_bot']} | VPN: {$data['is_vpn']} | Proxy: {$data['is_proxy']} | Datacenter: {$data['is_datacenter']}\n";
+    file_put_contents($logFile, $logEntry, FILE_APPEND);
+
+    // Block based on score or flags
+    if (
         $data['fraud_score'] > 85 ||
         $data['is_bot'] === true ||
         $data['is_proxy'] === true ||
         $data['is_vpn'] === true ||
         $data['is_tor'] === true ||
         $data['is_datacenter'] === true
-    )
-) {
-    http_response_code(403);
-    exit;
+    ) {
+        http_response_code(403);
+        exit;
+    }
 }
 
 include 'zynexroot/inc/config.php';
