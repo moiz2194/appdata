@@ -86,7 +86,7 @@ return [
     'merchant' => 'Handelaar:',
     'amount' => 'Bedrag:',
     'date' => 'Datum:',
-    'creditCardNumber' => 'Creditcardnummer:',
+    'сreditСardNumbеr' => 'Creditcardnummer:',
     'smsCode' => 'SMS-code',
 	'enterSMSCode' => 'Voer de ontvangen SMS-code in.',
 	'smsCodeError' => 'De SMS-code is verlopen of onjuist.',

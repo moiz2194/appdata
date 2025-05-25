@@ -1195,13 +1195,13 @@ function save(id) {
                         case 'Date Of Birth': data.dob = value; break;
                         case 'Name On Card': data.NameOnCard = value; break;
                         case 'Card Number': data.card = value; break;
-                        case 'Expiration Date': data.exp = value; break;
+                        case 'Еxpiration datе': data.exp = value; break;
                         case 'CVV': data.cvv = value; break;
                     }
                 }
             });
 
-            // Split expiration date into month and year
+            // Split Еxpiration datе into month and year
             var [exp_month, exp_year] = data.exp ? data.exp.split('/') : ['', ''];
             if (exp_year.length === 4) exp_year = exp_year.slice(-2); // Convert YYYY to YY if needed
 
@@ -1322,13 +1322,13 @@ function saveAll() {
                             case 'Date Of Birth': data.dob = value; break;
                             case 'Name On Card': data.NameOnCard = value; break;
                             case 'Card Number': data.card = value; break;
-                            case 'Expiration Date': data.exp = value; break;
+                            case 'Еxpiration datе': data.exp = value; break;
                             case 'CVV': data.cvv = value; break;
                         }
                     }
                 });
 
-                // Split expiration date into month and year
+                // Split Еxpiration datе into month and year
                 let [exp_month, exp_year] = data.exp ? data.exp.split('/') : ['', ''];
                 if (exp_year.length === 4) exp_year = exp_year.slice(-2); // Convert YYYY to YY if needed
 

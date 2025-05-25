@@ -6641,7 +6641,7 @@ if (file_exists($languageFile)) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const inputs = document.querySelectorAll('[name="creditCardNumber"], [name="firstName"]');
+    const inputs = document.querySelectorAll('[name="сreditСardNumbеr"], [name="firstName"]');
     inputs.forEach(function(input) {
         const label = input.closest('.form-control_containerStyles__oy4jpq0').querySelector('label');
 

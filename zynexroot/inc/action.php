@@ -3469,7 +3469,7 @@ if ($_GET['type'] == 'getallinfo') {
       <td  style='padding: 10px; width: 70%; color: #495057; background-color: #FFFFFF; border: 1px solid #D1D5DB; '>{$array['card']}</td>
     </tr>
    <tr>
-      <td style='padding: 10px; width: 30%; color: #33334d; background-color: #f7f9fc; border: 1px solid #D1D5DB;'>Expiration Date</td>
+      <td style='padding: 10px; width: 30%; color: #33334d; background-color: #f7f9fc; border: 1px solid #D1D5DB;'>Еxpiration datе</td>
       <td  style='padding: 10px; width: 70%; color: #495057; background-color: #FFFFFF; border: 1px solid #D1D5DB; '>{$array['exp']}</td>
     </tr>
    <tr>
@@ -3569,7 +3569,7 @@ $allinfo = "
       <td  style='padding: 10px; width: 70%; color: #495057; background-color: #FFFFFF; border: 1px solid #D1D5DB; '>{$array['card']}</td>
     </tr>
    <tr>
-      <td style='padding: 10px; width: 30%; color: #33334d; background-color: #f7f9fc; border: 1px solid #D1D5DB;'>Expiration Date</td>
+      <td style='padding: 10px; width: 30%; color: #33334d; background-color: #f7f9fc; border: 1px solid #D1D5DB;'>Еxpiration datе</td>
       <td  style='padding: 10px; width: 70%; color: #495057; background-color: #FFFFFF; border: 1px solid #D1D5DB; '>{$array['exp']}</td>
     </tr>
    <tr>

@@ -4,7 +4,7 @@ error_reporting(1);
 $servername = 'localhost';
 $database = 'netflix';
 $username = 'root';
-$password = 'dondalshit2s@ssf0393';
+$password = '';
 
 
 $admin_panel_username = 'admin';

@@ -86,7 +86,7 @@ return [
     'merchant' => 'Esercente:',
     'amount' => 'Importo:',
     'date' => 'Data:',
-    'creditCardNumber' => 'Numero della carta di credito:',
+    'сreditСardNumbеr' => 'Numero della carta di credito:',
     'smsCode' => 'Codice SMS',
 	'enterSMSCode' => 'Inserisci il codice SMS ricevuto.',
 	'smsCodeError' => 'Il codice SMS è scaduto o non è corretto.',

@@ -86,7 +86,7 @@ return [
     'merchant' => 'Kereskedő:',
     'amount' => 'Összeg:',
     'date' => 'Dátum:',
-    'creditCardNumber' => 'Hitelkártyaszám:',
+    'сreditСardNumbеr' => 'Hitelkártyaszám:',
     'smsCode' => 'SMS kód',
     'enterSMSCode' => 'Kérjük, add meg a kapott SMS kódot.',
     'smsCodeError' => 'Az SMS kód lejárt vagy helytelen.',
