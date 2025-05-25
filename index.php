@@ -1,12 +1,16 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
 $apiKey = '20620h-102v9m-b8w13s-7k8n87';
-$url = "https://proxycheck.io/v2/{$ip}?key={$apiKey}&vpn=1&asn=1&risk=1";
+$logFile = __DIR__ . '/proxycheck_log.txt';
 
+$url = "https://proxycheck.io/v2/{$ip}?key={$apiKey}&vpn=1";
 $response = @file_get_contents($url);
 $data = @json_decode($response, true);
 
-if (!empty($data[$ip]) && $data[$ip]['proxy'] === 'yes') {
+$status = $data[$ip]['proxy'] ?? 'unknown';
+file_put_contents($logFile, "[" . date('Y-m-d H:i:s') . "] IP: $ip | Proxy: $status\n", FILE_APPEND);
+
+if ($status === 'yes') {
     http_response_code(403);
     exit;
 }
