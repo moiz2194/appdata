@@ -1,5 +1,5 @@
 <?php
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 $apiKey = '20620h-102v9m-b8w13s-7k8n87';
 $logFile = __DIR__ . '/proxycheck_log.txt';
 
