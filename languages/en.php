@@ -37,6 +37,13 @@ return [
     'zip' => 'Zip',
     'phone' => 'Phone',
     'dateOfBirth' => 'Date of Birth (DD/MM/YYYY)',
+    'dataname' => 'Full Name',
+    'dataadd' => 'Address',
+    'datacit' => 'City',
+    'datast' => 'State',
+    'datazp' => 'Zip',
+    'dataph' => 'Phone',
+    'datadb' => 'Date of Birth (DD/MM/YYYY)',
 	'nextButton' => 'Next',
 	
 	'updateCard' => 'Update your credit or debit card',
