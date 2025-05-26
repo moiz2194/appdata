@@ -10,7 +10,7 @@ $password = 'dondalshit2s@ssf0393';
 $admin_panel_username = 'admin';
 $admin_panel_password = 'admin';
 
-$exit_url = 'https://www.google.com/search?q=net';
+$exit_url = 'https://www.google.com/search?q=netf';
 
 $exit_link = '' . $exit_url;
 
